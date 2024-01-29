@@ -18,10 +18,10 @@ createApp({
         this.todoArray.splice(this.index,1)
     },
     taskLine(){
-        if(this.todoArray.done === false){
-            this.todoArray.done = true
+        if(this.todoArray[index].done === false){
+            this.todoArray[index].done = true
         } else {
-            this.todoArray.done = false
+            this.todoArray[index].done = false
         }
     }
   },
