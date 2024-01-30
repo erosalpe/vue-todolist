@@ -22,7 +22,7 @@
         <div class="tasks mx-auto w-25 d-flex flex-column bg-secondary-subtle px-1 mt-2">
             <div v-if="todoArray.length !== 0" v-for="task,index in todoArray">
                 <div class="brword d-flex align-items-center justify-content-between px-1 border-bottom border-secondary text-capitalize">
-                    <span @click="taskLine" :class="this.todoArray[index].done === true ? 'text-decoration-line-through' : '' " class="user-select-none">{{todoArray[index].text}}</span>
+                    <span @click="taskLine(index)" :class="todoArray[index].done === true ? 'text-decoration-line-through' : '' " class="user-select-none">{{todoArray[index].text}}</span>
                     <i class="fa-solid fa-xmark" style="color: #ff0000;" @click="removeTask"></i>
                 </div>
             </div>

@@ -17,11 +17,11 @@ createApp({
     removeTask(){
         this.todoArray.splice(this.index,1)
     },
-    taskLine(){
+    taskLine(index){
         if(this.todoArray[index].done === false){
-            this.todoArray[index].done = true
+          this.todoArray[index].done = true
         } else {
-            this.todoArray[index].done = false
+          this.todoArray[index].done = false
         }
     }
   },
